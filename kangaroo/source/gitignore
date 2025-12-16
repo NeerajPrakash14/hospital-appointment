@@ -1,0 +1,5 @@
+.github/instructions/wmt-copilot.instructions.md
+
+/node_modules
+.node_modules
+node_modules
