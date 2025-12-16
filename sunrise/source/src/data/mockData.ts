@@ -1,0 +1,243 @@
+import { Doctor, Department } from '../App';
+
+export const mockDoctors: Doctor[] = [
+  {
+    id: '1',
+    name: 'Dr. Murali Mohan S',
+    specialty: 'Neurology',
+    subSpecialty: 'Interventional Cardiology',
+    experience: 23,
+    rating: 4.9,
+    availability: ['Mon', 'Wed', 'Fri'],
+    image: 'https://d2vvc091k8tmib.cloudfront.net/s3fs-public/2025-10/Dr.%20Murali%20Mohan%20.webp',
+    expertise: 'Brain Tumor Management, Deep Brain Stimulation (DBS) for Parkinson’s Disease, Pediatric Brain and Spine Surgeries, Craniovertebral (CV) Junction Disorders, Back Pain and Disc Disorder Treatment',
+    profileUrl: 'https://www.linqmd.com/doctor/murali-mohan-s/know-your-doctor'
+  },
+  {
+    id: '2',
+    name: 'Dr. Balachandra BV',
+    specialty: 'General Medicine',
+    subSpecialty: 'Pediatric Neurology',
+    experience: 17,
+    rating: 4.8,
+    availability: ['Tue', 'Thu', 'Sat'],
+    image: 'https://d2vvc091k8tmib.cloudfront.net/s3fs-public/2024-10/dr_balachandra_bv.webp',
+    expertise: 'General pediatrics, Adolescent care, Pediatric Nutrition, Pediatric Immunization, Adult Immunization, Pediatric Allergy, Adult Allergy, Allergy rhinitis, Sinusitis, Pediatric Asthma, Adult Asthma',
+    profileUrl: 'https://www.linqmd.com/doctor/balachandra-bv/know-your-doctor'
+  },
+  {
+    id: '3',
+    name: 'Dr. Gayathri Pandit',
+    specialty: 'Orthopedics',
+    subSpecialty: 'Sports Medicine',
+    experience: 17,
+    rating: 4.7,
+    availability: ['Mon', 'Tue', 'Thu'],
+    image: 'https://d2vvc091k8tmib.cloudfront.net/s3fs-public/2024-10/dr_gayatri_s_pandit_1.webp',
+    expertise: 'ENT consultation, Allergy consultation, Allergic rhinitis, Sinusitis and Polyposis, Adenoid inflammation, Skin allergy, Food allergy, Anaphylaxis, Nasal Endoscopy',
+    profileUrl: 'https://www.linqmd.com/doctor/gayatripandit/know-your-doctor'
+  },
+  {
+    id: '4',
+    name: 'Dr. Lavanya Kiran',
+    specialty: 'Gynaecology',
+    experience: 20,
+    rating: 4.9,
+    availability: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
+    image: 'https://d2vvc091k8tmib.cloudfront.net/s3fs-public/2025-11/Black%20and%20White%20Home%20Interior%20Designer%20Logo%20%281%29.jpg',
+    expertise: 'Reproductive Medicine & Infertility Treatments, Robotic and Laparoscopic Surgeries, Regenerative & Cosmetic Gynaecology, High-Risk Obstetrics & Pregnancy Care, Fertility Preservation & Oocyte Tissue Cryopreservation',
+    profileUrl: 'https://www.linqmd.com/doctorlavanya/know-your-doctor'
+  },
+  {
+    id: '5',
+    name: 'Dr. Aarthi Karat',
+    specialty: 'ENT Specialist',
+    subSpecialty: 'Cosmetic Dermatology',
+    experience: 13,
+    rating: 4.8,
+    availability: ['Wed', 'Thu', 'Fri'],
+    image: 'https://d2vvc091k8tmib.cloudfront.net/s3fs-public/2025-03/perfect%20_0.jpg',
+    expertise: 'General ENT, Allergy treatments, managing sinusitis, adenotonsillitis, and ear diseases, immunotherapy, particularly for pediatric and adult allergic rhinitis and asthma',
+    profileUrl: 'https://www.linqmd.com/doctor/arathi-karat/know-your-doctor'
+  },
+  {
+    id: '6',
+    name: 'Dr. Sravanthi PVN',
+    specialty: 'Pediatrician',
+    subSpecialty: 'Retinal Surgery',
+    experience: 6,
+    rating: 4.9,
+    availability: ['Mon', 'Wed', 'Fri'],
+    image: 'https://d2vvc091k8tmib.cloudfront.net/s3fs-public/2025-03/dr%20sravanthi.png',
+    expertise: 'General paediatrics, Paediatric immunization, Paediatric infectious diseases, Growth and development, Adolescent care, Paediatric Nutrition, Adult Immunization, Paediatric Allergy',
+    profileUrl: 'https://www.linqmd.com/doctor/p-v-n-sravanthi/know-your-doctor'
+  },
+  {
+    id: '7',
+    name: 'Dr. Usha Shree',
+    specialty: 'General Medicine',
+    subSpecialty: 'Neonatal Care',
+    experience: 12,
+    rating: 4.9,
+    availability: ['Tue', 'Wed', 'Thu'],
+    image: 'https://d2vvc091k8tmib.cloudfront.net/s3fs-public/2025-03/dp_1.jpg',
+    expertise: 'Vitreo-Retina, Retinal disorders such as diabetic retinopathy and macular degenerations, Therapeutic procedures',
+    profileUrl: 'https://www.linqmd.com/doctor/usha-shree/know-your-doctor'
+  },
+  {
+    id: '8',
+    name: 'Dr. Santhosh Kumar',
+    specialty: 'ENT Specialist',
+    subSpecialty: 'Head & Neck Surgery',
+    experience: 24,
+    rating: 4.7,
+    availability: ['Mon', 'Thu', 'Fri'],
+    image: 'https://d2vvc091k8tmib.cloudfront.net/s3fs-public/2025-03/Dr%20Santosh.jpg',
+    expertise: 'Cardio diabetologist and endocrinologist, specializing in heart, diabetes, thyroid, and hormonal disorders, offering expert guidance on diabetes management, thyroid treatment, and heart health',
+    profileUrl: 'https://www.linqmd.com/doctor/santosh-kumar-pk/know-your-doctor'
+  },
+  {
+    id: '9',
+    name: 'Dr. Anjana Hulse',
+    specialty: 'Pediatrician',
+    subSpecialty: 'Cardiac Electrophysiology',
+    experience: 20,
+    rating: 4.8,
+    availability: ['Tue', 'Thu', 'Sat'],
+    image: 'https://d2vvc091k8tmib.cloudfront.net/s3fs-public/2025-08/WhatsApp%20Image%202025-08-14%20at%2011.37.23_40514b34.jpg',
+    expertise: 'General Paediatrics, Vaccination and Immunization, Growth disorders (short stature, tall stature), Early or delayed puberty, Childhood obesity and related hormonal issues, Thyroid disorders (hypothyroidism, hyperthyroidism)',
+    profileUrl: 'https://www.linqmd.com/doctor/anjana-hulse/know-your-doctor'
+  },
+  {
+    id: '10',
+    name: 'Dr. Yamini Nandini',
+    specialty: 'General Medicine',
+    subSpecialty: 'Joint Replacement',
+    experience: 17,
+    rating: 4.9,
+    availability: ['Mon', 'Wed', 'Fri'],
+    image: 'https://d2vvc091k8tmib.cloudfront.net/s3fs-public/2025-08/WhatsApp%20Image%202025-08-21%20at%2009.33.14_2bfed7f7.jpg',
+    expertise: 'Prosthodontics, Dental Implantology, Full Mouth Rehabilitation, Nanotechnology in Dentistry, Craniofacial Rehabilitation',
+    profileUrl: 'https://www.linqmd.com/doctor/yamini-nandini/know-your-doctor'
+  },
+  // {
+  //   id: '11',
+  //   name: 'Jennifer Davis',
+  //   specialty: 'Dermatology',
+  //   experience: 9,
+  //   rating: 4.6,
+  //   availability: ['Tue', 'Wed', 'Thu'],
+  //   image: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=400&fit=crop',
+  //   expertise: 'Eczema & Psoriasis Treatment, Skin Cancer Screening, Medical Dermatology, Pediatric Skin Care',
+  //   profileUrl: 'https://linqmd.com/doctor/jennifer-davis'
+  // },
+  // {
+  //   id: '12',
+  //   name: 'Thomas Brown',
+  //   specialty: 'Neurology',
+  //   subSpecialty: 'Stroke Care',
+  //   experience: 17,
+  //   rating: 4.8,
+  //   availability: ['Mon', 'Tue', 'Fri'],
+  //   image: 'https://images.unsplash.com/photo-1618498082410-b4aa22193b38?w=400&h=400&fit=crop',
+  //   expertise: 'Acute Stroke Treatment, Thrombectomy, Stroke Prevention, TIA Management',
+  //   profileUrl: 'https://linqmd.com/doctor/thomas-brown'
+  // },
+  // {
+  //   id: '13',
+  //   name: 'Dr. Sophia Martinez',
+  //   specialty: 'Pulmonology',
+  //   subSpecialty: 'Critical Care',
+  //   experience: 14,
+  //   rating: 4.9,
+  //   availability: ['Mon', 'Wed', 'Fri'],
+  //   image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop',
+  //   expertise: 'Asthma Management, COPD Treatment, Lung Cancer Screening, Sleep Disorders',
+  //   profileUrl: 'https://linqmd.com/doctor/sophia-martinez'
+  // },
+  // {
+  //   id: '14',
+  //   name: 'Dr. Daniel Park',
+  //   specialty: 'Urology',
+  //   subSpecialty: 'Minimally Invasive Surgery',
+  //   experience: 16,
+  //   rating: 4.7,
+  //   availability: ['Tue', 'Thu', 'Sat'],
+  //   image: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=400&fit=crop',
+  //   expertise: 'Kidney Stone Treatment, Prostate Surgery, Bladder Cancer, Male Infertility',
+  //   profileUrl: 'https://linqmd.com/doctor/daniel-park'
+  // },
+  // {
+  //   id: '15',
+  //   name: 'Dr. Maria Garcia',
+  //   specialty: 'Endocrinology',
+  //   subSpecialty: 'Diabetes & Metabolism',
+  //   experience: 11,
+  //   rating: 4.8,
+  //   availability: ['Mon', 'Tue', 'Wed', 'Thu'],
+  //   image: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=400&fit=crop',
+  //   expertise: 'Type 1 & 2 Diabetes, Thyroid Disorders, Hormonal Imbalances, Metabolic Syndrome',
+  //   profileUrl: 'https://linqmd.com/doctor/maria-garcia'
+  // }
+];
+
+export const departments: Department[] = [
+  { id: '1', name: 'Cardiology', icon: 'heart', doctorCount: 2 },
+  { id: '2', name: 'Neurology', icon: 'brain', doctorCount: 2 },
+  { id: '3', name: 'Orthopedics', icon: 'bone', doctorCount: 2 },
+  { id: '4', name: 'Ophthalmology', icon: 'eye', doctorCount: 1 },
+  { id: '5', name: 'General Medicine', icon: 'stethoscope', doctorCount: 1 },
+  { id: '6', name: 'Pediatrics', icon: 'baby', doctorCount: 1 },
+  { id: '7', name: 'ENT', icon: 'ear', doctorCount: 1 },
+  { id: '8', name: 'Dermatology', icon: 'activity', doctorCount: 2 },
+  { id: '9', name: 'Gastroenterology', icon: 'activity', doctorCount: 3 },
+  { id: '10', name: 'Pulmonology', icon: 'wind', doctorCount: 2 },
+  { id: '11', name: 'Nephrology', icon: 'droplet', doctorCount: 2 },
+  { id: '12', name: 'Urology', icon: 'activity', doctorCount: 2 },
+  { id: '13', name: 'Endocrinology', icon: 'zap', doctorCount: 2 },
+  { id: '14', name: 'Rheumatology', icon: 'bone', doctorCount: 1 },
+  { id: '15', name: 'Psychiatry', icon: 'brain', doctorCount: 3 },
+  { id: '16', name: 'Oncology', icon: 'activity', doctorCount: 4 },
+  { id: '17', name: 'Radiology', icon: 'scan', doctorCount: 3 },
+  { id: '18', name: 'Anesthesiology', icon: 'syringe', doctorCount: 2 },
+  { id: '19', name: 'Emergency Medicine', icon: 'ambulance', doctorCount: 5 },
+  { id: '20', name: 'Obstetrics & Gynecology', icon: 'heart', doctorCount: 3 }
+];
+
+export const commonSymptoms = [
+  'Fever',
+  'Headache',
+  'Chest Pain',
+  'Shortness of Breath',
+  'Abdominal Pain',
+  'Joint Pain',
+  'Back Pain',
+  'Skin Rash',
+  'Cough',
+  'Fatigue',
+  'Dizziness',
+  'Vision Problems',
+  'Ear Pain',
+  'Sore Throat',
+  'Nausea',
+  'Heart Palpitations'
+];
+
+export const symptomToSpecialty: { [key: string]: { specialty: string; subSpecialty?: string } } = {
+  'Chest Pain': { specialty: 'Cardiology', subSpecialty: 'Interventional Cardiology' },
+  'Heart Palpitations': { specialty: 'Cardiology' },
+  'Shortness of Breath': { specialty: 'Cardiology' },
+  'Headache': { specialty: 'Neurology' },
+  'Dizziness': { specialty: 'Neurology' },
+  'Joint Pain': { specialty: 'Orthopedics' },
+  'Back Pain': { specialty: 'Orthopedics' },
+  'Skin Rash': { specialty: 'Dermatology' },
+  'Vision Problems': { specialty: 'Ophthalmology' },
+  'Ear Pain': { specialty: 'ENT' },
+  'Sore Throat': { specialty: 'ENT' },
+  'Fever': { specialty: 'General Medicine' },
+  'Cough': { specialty: 'General Medicine' },
+  'Fatigue': { specialty: 'General Medicine' },
+  'Abdominal Pain': { specialty: 'General Medicine' },
+  'Nausea': { specialty: 'General Medicine' }
+};
